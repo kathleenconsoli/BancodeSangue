@@ -22,4 +22,9 @@
         android:name="br.com.kathleenconsoli.bancodesangue.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_cad_paciente"
+        android:name="br.com.kathleenconsoli.bancodesangue.ui.paciente.CadPacienteFragment"
+        android:label="@string/title_cad_paciente"
+        tools:layout="@layout/fragment_cad_paciente" />
 </navigation>

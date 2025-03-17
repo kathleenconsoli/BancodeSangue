@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Banco de Sangue</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Início</string>
+    <string name="title_dashboard">Painel</string>
+    <string name="title_notifications">Avisos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_cad_paciente">Cad. Paciente</string>
+    <string name="nome_paciente">Nome Paciente</string>
+    <string name="viniciusdemoraes">ViniciusdeMoraes</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
 </resources>
