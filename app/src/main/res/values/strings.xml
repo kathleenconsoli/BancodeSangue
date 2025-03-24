@@ -9,4 +9,30 @@
     <string name="nome_paciente">Nome Paciente</string>
     <string name="viniciusdemoraes">ViniciusdeMoraes</string>
     <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="Sexo" />
+    <string name="_24_10_1997">24/10/1997</string>
+    <string name="sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="j_doou_sangue_antes">É já doou sangue antes?</string>
+    <string name="ja_doou_sangue_antes">Ja doou sangue antes?</string>
+    <string name="sim">Sim</string>
+    <string name="n_o">Não</string>
+    <string name="nao">Nao</string>
+    <string name="quando_foi_a_ultima_doacao">Quando foi a ultima doacao?</string>
+    <string name="_01_02_2025">01/02/2025</string>
+    <string name="qual_seu_tipo_sanguineo">Qual seu tipo sanguineo?</string>
+    <string-array name="tipos_sanguineo">
+        <item>Selecione</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="cadastrar">Cadastrar</string>
+
 </resources>
