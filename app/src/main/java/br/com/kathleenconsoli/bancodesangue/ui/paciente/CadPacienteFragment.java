@@ -107,7 +107,7 @@ public class CadPacienteFragment extends Fragment implements View.OnClickListene
                 int radioButtonSexo =
                         rgSexo.getCheckedRadioButtonId();
                 View radioButtonsexo = rgSexo.findViewById(radioButtonSexo);
-                paciente.setSexo(String.valueOf(rgSexo.indexOfChild()));
+                paciente.setSexo(String.valueOf(rgSexo.indexOfChild(radioButtonsexo)));
                 int radioButtonJadoou =
                         rgjadoou.getCheckedRadioButtonId();
                 View radioButtonjadoou = rgjadoou.findViewById(radioButtonJadoou);
@@ -121,3 +121,4 @@ public class CadPacienteFragment extends Fragment implements View.OnClickListene
         }
     }
 }
+
