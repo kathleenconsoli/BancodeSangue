@@ -94,6 +94,7 @@ public class ConPacienteFragment extends Fragment  implements Response.ErrorList
                 jsonArray, this, this);
 //mando executar a requisção na fila do sistema
         requestQueue.add(jsonArrayReq);
+        //
         return view;
     }
 
