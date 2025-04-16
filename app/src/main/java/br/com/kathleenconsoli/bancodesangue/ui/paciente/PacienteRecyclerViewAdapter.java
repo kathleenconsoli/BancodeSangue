@@ -3,24 +3,23 @@ package br.com.kathleenconsoli.bancodesangue.ui.paciente;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import br.com.kathleenconsoli.bancodesangue.ui.paciente.placeholder.PlaceholderContent.PlaceholderItem;
 import br.com.kathleenconsoli.bancodesangue.databinding.FragmentConPacienteBinding;
+import br.com.kathleenconsoli.bancodesangue.model.Paciente;
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
+ * {@link RecyclerView.Adapter} that can display a {@link Paciente}.
  * TODO: Replace the implementation with code for your data type.
  */
 public class PacienteRecyclerViewAdapter extends RecyclerView.Adapter<PacienteRecyclerViewAdapter.ViewHolder> {
 
-    private final List<PlaceholderItem> mValues;
+    private final List<Paciente> mValues;
 
-    public PacienteRecyclerViewAdapter(List<PlaceholderItem> items) {
+    public PacienteRecyclerViewAdapter(List<Paciente> items) {
         mValues = items;
     }
 
@@ -34,8 +33,8 @@ public class PacienteRecyclerViewAdapter extends RecyclerView.Adapter<PacienteRe
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        holder.mIdView.setText(mValues.get(position).getNomePaciente());
+        holder.mContentView.setText(mValues.get(position).getTiposanguineo());
     }
 
     @Override
@@ -46,7 +45,7 @@ public class PacienteRecyclerViewAdapter extends RecyclerView.Adapter<PacienteRe
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final TextView mIdView;
         public final TextView mContentView;
-        public PlaceholderItem mItem;
+        public Paciente mItem;
 
         public ViewHolder(FragmentConPacienteBinding binding) {
             super(binding.getRoot());
