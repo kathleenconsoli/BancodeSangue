@@ -12,6 +12,11 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+
 import br.com.kathleenconsoli.bancodesangue.R;
 import br.com.kathleenconsoli.bancodesangue.model.Paciente;
 
@@ -20,7 +25,7 @@ import br.com.kathleenconsoli.bancodesangue.model.Paciente;
  * Use the {@link CadPacienteFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CadPacienteFragment extends Fragment implements View.OnClickListener {
+public class CadPacienteFragment extends Fragment implements View.OnClickListener, Response.ErrorListener, Response.Listener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -40,6 +45,10 @@ public class CadPacienteFragment extends Fragment implements View.OnClickListene
     private EditText etDoacaoData;
     private Spinner sptipos_sanguineo;
     private Button btsalvar;
+
+    //volley
+    private RequestQueue requestQueue;
+    private JsonObjectRequest jsonObjectReq;
 
     public CadPacienteFragment() {
         // Required empty public constructor
@@ -119,6 +128,16 @@ public class CadPacienteFragment extends Fragment implements View.OnClickListene
                 throw new RuntimeException(e);
             }
         }
+    }
+
+    @Override
+    public void onErrorResponse(VolleyError error) {
+
+    }
+
+    @Override
+    public void onResponse(Object response) {
+
     }
 }
 
