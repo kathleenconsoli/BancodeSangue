@@ -27,4 +27,9 @@
         android:name="br.com.kathleenconsoli.bancodesangue.ui.paciente.CadPacienteFragment"
         android:label="@string/title_cad_paciente"
         tools:layout="@layout/fragment_cad_paciente" />
+    <fragment
+        android:id="@+id/navigation_con_paciente"
+        android:name="br.com.kathleenconsoli.bancodesangue.ui.paciente.ConPacienteFragment"
+        android:label="@string/title_con_paciente"
+        tools:layout="@layout/fragment_con_paciente_list" />
 </navigation>

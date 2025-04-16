@@ -34,5 +34,6 @@
         <item>Não sei</item>
     </string-array>
     <string name="cadastrar">Cadastrar</string>
+    <string name="title_con_paciente">Con. Paciente</string>
 
 </resources>
